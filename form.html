@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Devs</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1> Formulario de Devs </h1>
+    <form action="dados.html" method="get">
+        <div>
+            <label for="nome" class="label"> Nome </label>
+            <input type="text" name="nome" id="nome" class="input" required placeholder="Nome completo">
+        </div>
+
+        <div>
+            <label for="email" class="label">Email</label>
+            <input type="email" name="email" id="email" class="input" placeholder="Seu melhor email">
+        </div>
+
+        <div>
+            <label for="data" class="label">Data de nascimento</label>
+            <input type="date" name="" id="data" class="input">
+        </div>
+
+        <div>
+            <p class="label"> Sexo </p>
+
+
+            <label for="m">Masculino</label>
+            <input type="radio" class="opcao" name="sexo" id="m" value="masculino" checked>
+
+            <label for="f">Feminino</label>
+            <input type="radio" class="opcao" name="sexo" id="f" value="feminino">
+        </div>
+
+        <div>
+            <p class="label"> Linguagens que domina </p>
+
+            <label for="js">Javascript</label>
+            <input type="checkbox" class="opcao" name="linguagens" id="js" value="js" checked>
+            <br>
+            <label for="php"> PHP </label>
+            <input type="checkbox" class="opcao" name="linguagens" id="php" value="php" checked>
+            <br>
+            <label for="csharp"> C# </label>
+            <input type="checkbox" class="opcao" name="linguagens" id="csharp" value="csharp">
+            <br>
+            <label for="python"> Python </label>
+            <input type="checkbox" class="opcao" name="linguagens" id="python" value="python">
+        </div>
+
+        <div>
+            <p class="label">Horario de preferencia</p>
+            <select name="horario" id="" required>
+                <option value="" hidden> Selecione sua preferencia </option>
+                <option value="manha"> Manha </option>
+                <option value="tarde" selected> Tarde </option>
+                <option value="noite"> noite </option>
+            </select>
+        </div>
+
+        <div>
+            <p class="label">Fale sobre voce</p>
+            <textarea name="sobrevc" id="" ></textarea>
+        </div>
+
+        <div>
+            <input type="submit" value="Cadastrar" id="botao"> 
+        </div>
+
+    </form>
+
+</body>
+</html>
